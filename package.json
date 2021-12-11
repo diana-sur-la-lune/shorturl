@@ -1,0 +1,29 @@
+{
+  "name": "shorturl",
+  "version": "1.0.0",
+  "description": "Final project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diana-sur-la-lune/shorturl.git"
+  },
+  "keywords": [
+    "react",
+    "mern"
+  ],
+  "author": "Diana Voinova <dia.voinova@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diana-sur-la-lune/shorturl/issues"
+  },
+  "homepage": "https://github.com/diana-sur-la-lune/shorturl#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.1"
+  }
+}
