@@ -1,13 +1,11 @@
 import React from 'react'
-// import {Routes} from 'react-router-dom'
 import {Route} from 'react-router-dom'
 import {Switch} from 'react-router-dom'
-// import {Navigate} from 'react-router-dom'
+import { Redirect } from 'react-router'
 import { LinksPage } from './pages/LinksPage'
 import { CreatePage } from './pages/CreatePage'
 import { DetailPage } from './pages/DetailPage'
 import { AuthPage } from './pages/AuthPage'
-import { Redirect } from 'react-router'
 
 export const useRoutes = isAuthenticated => {
 if (isAuthenticated) {

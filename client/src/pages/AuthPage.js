@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useHttp } from '../hooks/http.hook'
 import {useMessage} from '../hooks/message.hook'
-import { useContext } from 'react'
 import { AuthContext } from '../context/AuthContext'
-// import { Navigate, Outlet } from 'react-router-dom'
 
 export const AuthPage = () => {
     const auth = useContext(AuthContext)
@@ -17,6 +15,10 @@ export const AuthPage = () => {
 message(error)
 clearError()
     }, [error, message, clearError])
+
+    useEffect( () => {
+        window.M.updateTextFields()
+    }, [])
 
 const changeHandler = event => {
     setForm({...form, [event.target.name]: event.target.value})
@@ -52,6 +54,7 @@ auth.login(data.token, data.userId)
           type="text"
           name="email"
           className="lime-input"
+          value={form.email}
           onChange={changeHandler}
            />
           <label htmlFor="email">Email</label>
@@ -64,6 +67,7 @@ auth.login(data.token, data.userId)
           type="password"
           name="password"
           className="lime-input"
+          value={form.password}
           onChange={changeHandler}
            />
           <label htmlFor="password" >Password</label>
@@ -85,9 +89,9 @@ auth.login(data.token, data.userId)
               Register
               </button>
 
+            </div>
         </div>
-  </div>
-          </div>
-        </div>
+    </div>
+</div>
     )
 }
