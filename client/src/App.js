@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom'
 import {useRoutes} from './routes'
 // import { AuthPage } from './pages/AuthPage';
