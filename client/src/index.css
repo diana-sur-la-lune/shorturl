@@ -1,1 +1,19 @@
 @import "~materialize-css/dist/css/materialize.min.css";
+
+input.lime-input {
+  border-bottom: 1px solid white!important;
+  box-shadow: 0 1px 0 0 white!important;
+}
+
+input.lime-input + label {
+color: white!important;
+}
+
+input.lime-input:focus + label {
+  color: white!important;
+  }
+
+input.lime-input:focus {
+  border-bottom: 1px solid lime!important;
+  box-shadow: 0 1px 0 0 lime!important;
+}
