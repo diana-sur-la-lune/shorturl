@@ -8,11 +8,12 @@ export const LinksList = ({ links }) => {
   }
 
   return (
+    <div className='responsive-table'>
     <table>
       <thead>
       <tr>
         <th>№</th>
-        <th>Original</th>
+        <th className="col s2">Original</th>
         <th>Shortened</th>
         <th>Open</th>
       </tr>
@@ -33,5 +34,6 @@ export const LinksList = ({ links }) => {
       }) }
       </tbody>
     </table>
+    </div>
   )
 }
