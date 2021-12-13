@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
 import {Switch} from 'react-router-dom'
-import { Redirect } from 'react-router'
+import { Redirect } from 'react-router-dom'
 import { LinksPage } from './pages/LinksPage'
 import { CreatePage } from './pages/CreatePage'
 import { DetailPage } from './pages/DetailPage'
