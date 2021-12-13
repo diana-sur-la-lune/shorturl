@@ -12,8 +12,8 @@ export const AuthPage = () => {
     })
 
     useEffect( () => {
-message(error)
-clearError()
+    message(error)
+    clearError()
     }, [error, message, clearError])
 
     useEffect( () => {
