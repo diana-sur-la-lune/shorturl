@@ -26,7 +26,7 @@ export const LinksList = ({ links }) => {
             <td>{link.from}</td>
             <td>{link.to}</td>
             <td>
-              <Link to={`/detail/${link._id}`}>Открыть</Link>
+              <Link to={`/detail/${link._id}`}>Open</Link>
             </td>
           </tr>
         )
